@@ -87,5 +87,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             // 원격 서비스 연결 종료
         }
     };
-
 }
