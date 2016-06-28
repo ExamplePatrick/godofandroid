@@ -8,18 +8,13 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.daemonservice.MainActivity">
+        <activity android:name="com.example.client.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <service
-            android:name="com.example.daemonservice.DaemonService"
-            android:enabled="true"
-            android:exported="true"></service>
     </application>
 
 </manifest>
