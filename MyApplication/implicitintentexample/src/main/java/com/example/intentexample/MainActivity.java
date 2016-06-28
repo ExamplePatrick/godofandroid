@@ -5,6 +5,7 @@ import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,15 +24,19 @@ public class MainActivity extends AppCompatActivity {
         phoneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "[Intent] 전화걸기", Toast.LENGTH_SHORT).show();
-                Uri uri = Uri.parse("tel:전화번호");
-                Intent intent = new Intent(Intent.ACTION_CALL, uri);
 
-                if (ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                    Toast.makeText(MainActivity.this, "Permission required.", Toast.LENGTH_SHORT).show();
-                }else{
-                    startActivity(intent);
+                if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
+                    if(checkSelfPermission(Manifest.permission.CALL_PHONE)
+                            != PackageManager.PERMISSION_GRANTED){
+                        requestPermissions(new String[]{Manifest.permission.CALL_PHONE}, 100);
+                        Toast.makeText(MainActivity.this, "안드로이드 6.0 마시멜로부터 일부 권한에 대해 사용자에게 동의 필요!",Toast.LENGTH_SHORT).show();
+                        return;
+                    }
                 }
+
+                Uri uri = Uri.parse("tel:01099990000");
+                Intent intent = new Intent(Intent.ACTION_CALL, uri);
+                startActivity(intent);
             }
         });
 
@@ -39,8 +44,7 @@ public class MainActivity extends AppCompatActivity {
         textButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "[Intent] 문자 보내기", Toast.LENGTH_SHORT).show();
-                Uri uri = Uri.parse("smsto:전화번호");
+                Uri uri = Uri.parse("smsto:01099990000");
                 Intent intent = new Intent(Intent.ACTION_SENDTO, uri);
                 intent.putExtra("sms_body", "Hi");
                 startActivity(intent);
@@ -51,13 +55,12 @@ public class MainActivity extends AppCompatActivity {
         emailButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "[Intent] 이메일 보내기", Toast.LENGTH_SHORT).show();
                 Uri uri = Uri.parse("mailto:nasuk0610@gmail.com");
                 Intent intent = new Intent(Intent.ACTION_SENDTO, uri);
                 try{
                     startActivity(intent);
-                } catch (ActivityNotFoundException e) {
-                    Toast.makeText(MainActivity.this,"[Email] fail", Toast.LENGTH_SHORT).show();
+                }catch(ActivityNotFoundException e){
+                    Toast.makeText(MainActivity.this, "ActivityNotFoundException", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -66,12 +69,9 @@ public class MainActivity extends AppCompatActivity {
         browserButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "[Intent] 브라우저 보내기", Toast.LENGTH_SHORT).show();
-
-                Uri uri = Uri.parse("http://www.naver.com");
+                Uri uri = Uri.parse("http://naver.com");
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
-
             }
         });
 
