@@ -1,5 +1,5 @@
 // RemoteStub.aidl
-package com.example.myapplication;
+package com.example.remoteservice;
 
 // Declare any non-default types here with import statements
 

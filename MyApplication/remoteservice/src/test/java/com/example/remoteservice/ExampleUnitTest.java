@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.remoteservice;
 
 import org.junit.Test;
 
