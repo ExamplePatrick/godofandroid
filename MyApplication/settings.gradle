@@ -1,1 +1,1 @@
-include ':app', ':myapplication2', ':daemonservice', ':client', ':remoteservice', ':implicitintentexample'
+include ':app', ':myapplication2', ':daemonservice', ':client', ':remoteservice', ':implicitintentexample', ':broadcastreceiver'

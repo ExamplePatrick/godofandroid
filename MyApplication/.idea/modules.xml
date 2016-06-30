@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/broadcastreceiver/broadcastreceiver.iml" filepath="$PROJECT_DIR$/broadcastreceiver/broadcastreceiver.iml" />
       <module fileurl="file://$PROJECT_DIR$/client/client.iml" filepath="$PROJECT_DIR$/client/client.iml" />
       <module fileurl="file://$PROJECT_DIR$/daemonservice/daemonservice.iml" filepath="$PROJECT_DIR$/daemonservice/daemonservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/implicitintentexample/implicitintentexample.iml" filepath="$PROJECT_DIR$/implicitintentexample/implicitintentexample.iml" />
