@@ -22,7 +22,14 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    private Runnable runnable = new Runnable(){
 
+        @Override
+        public void run(){
+            TextView sumtxt = (TextView)MainActivity.this.findViewById(R.id.posttxt);
+            sumtxt.setText("Start Runnable");
+        }
+    };
 
     class CountThread extends Thread{
 
@@ -39,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
             msg.what = 0;
             msg.arg1 = sum;
             handler.sendMessage(msg);
+            handler.post(runnable);
         }
     }
 
