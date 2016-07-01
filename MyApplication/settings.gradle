@@ -1,1 +1,1 @@
-include ':app', ':myapplication2', ':daemonservice', ':client', ':remoteservice', ':implicitintentexample', ':broadcastreceiver', ':dynbroadcastreceiver'
+include ':app', ':myapplication2', ':daemonservice', ':client', ':remoteservice', ':implicitintentexample', ':broadcastreceiver', ':dynbroadcastreceiver', ':contentprovider', ':clientcp', ':processthread'

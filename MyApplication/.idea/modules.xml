@@ -6,10 +6,13 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/broadcastreceiver/broadcastreceiver.iml" filepath="$PROJECT_DIR$/broadcastreceiver/broadcastreceiver.iml" />
       <module fileurl="file://$PROJECT_DIR$/client/client.iml" filepath="$PROJECT_DIR$/client/client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clientcp/clientcp.iml" filepath="$PROJECT_DIR$/clientcp/clientcp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contentprovider/contentprovider.iml" filepath="$PROJECT_DIR$/contentprovider/contentprovider.iml" />
       <module fileurl="file://$PROJECT_DIR$/daemonservice/daemonservice.iml" filepath="$PROJECT_DIR$/daemonservice/daemonservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/dynbroadcastreceiver/dynbroadcastreceiver.iml" filepath="$PROJECT_DIR$/dynbroadcastreceiver/dynbroadcastreceiver.iml" />
       <module fileurl="file://$PROJECT_DIR$/implicitintentexample/implicitintentexample.iml" filepath="$PROJECT_DIR$/implicitintentexample/implicitintentexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/myapplication2/myapplication2.iml" filepath="$PROJECT_DIR$/myapplication2/myapplication2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/processthread/processthread.iml" filepath="$PROJECT_DIR$/processthread/processthread.iml" />
       <module fileurl="file://$PROJECT_DIR$/remoteservice/remoteservice.iml" filepath="$PROJECT_DIR$/remoteservice/remoteservice.iml" />
     </modules>
   </component>

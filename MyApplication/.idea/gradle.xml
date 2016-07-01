@@ -11,10 +11,13 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/broadcastreceiver" />
             <option value="$PROJECT_DIR$/client" />
+            <option value="$PROJECT_DIR$/clientcp" />
+            <option value="$PROJECT_DIR$/contentprovider" />
             <option value="$PROJECT_DIR$/daemonservice" />
             <option value="$PROJECT_DIR$/dynbroadcastreceiver" />
             <option value="$PROJECT_DIR$/implicitintentexample" />
             <option value="$PROJECT_DIR$/myapplication2" />
+            <option value="$PROJECT_DIR$/processthread" />
             <option value="$PROJECT_DIR$/remoteservice" />
           </set>
         </option>
@@ -24,10 +27,13 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/broadcastreceiver" />
             <option value="$PROJECT_DIR$/client" />
+            <option value="$PROJECT_DIR$/clientcp" />
+            <option value="$PROJECT_DIR$/contentprovider" />
             <option value="$PROJECT_DIR$/daemonservice" />
             <option value="$PROJECT_DIR$/dynbroadcastreceiver" />
             <option value="$PROJECT_DIR$/implicitintentexample" />
             <option value="$PROJECT_DIR$/myapplication2" />
+            <option value="$PROJECT_DIR$/processthread" />
             <option value="$PROJECT_DIR$/remoteservice" />
           </set>
         </option>
