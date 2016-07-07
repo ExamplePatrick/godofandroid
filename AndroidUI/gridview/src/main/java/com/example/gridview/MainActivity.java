@@ -57,11 +57,6 @@ public class MainActivity extends AppCompatActivity {
                 mAppItem.add(item);
             }
 
-//            if(appList.size() == 0 ){
-//                Toast.makeText(this, "it's null", Toast.LENGTH_LONG).show();
-//            }else{
-//                Toast.makeText(this, "size : " + Integer.toString(appList.size()), Toast.LENGTH_LONG).show();
-//            }
         }catch(Exception e){
             e.printStackTrace();
         }
