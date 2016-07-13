@@ -1,1 +1,1 @@
-include ':app', ':listview', ':gridview', ':spinner', ':textview', ':imageview'
+include ':app', ':listview', ':gridview', ':spinner', ':textview', ':imageview', ':calculatorform'
