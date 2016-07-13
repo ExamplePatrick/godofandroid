@@ -10,8 +10,10 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/gridview" />
+            <option value="$PROJECT_DIR$/imageview" />
             <option value="$PROJECT_DIR$/listview" />
             <option value="$PROJECT_DIR$/spinner" />
+            <option value="$PROJECT_DIR$/textview" />
           </set>
         </option>
         <option name="myModules">
@@ -19,8 +21,10 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/gridview" />
+            <option value="$PROJECT_DIR$/imageview" />
             <option value="$PROJECT_DIR$/listview" />
             <option value="$PROJECT_DIR$/spinner" />
+            <option value="$PROJECT_DIR$/textview" />
           </set>
         </option>
       </GradleProjectSettings>
