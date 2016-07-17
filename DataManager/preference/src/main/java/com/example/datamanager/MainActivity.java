@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button runinfobtn = (Button)this.findViewById(R.id.runinfobtn);
         runinfobtn.setOnClickListener(this);
 
+        Button runLifecycleBtn = (Button)this.findViewById(R.id.runlifecycle);
+        runLifecycleBtn.setOnClickListener(this);
+
         mPreference = getSharedPreferences(USER_FILE_NAME, Context.MODE_PRIVATE);
         mEditPreference = mPreference.edit();
 
@@ -46,6 +49,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.runinfobtn:
                 TextView counttxt = (TextView)this.findViewById(R.id.counttxt);
                 counttxt.setText(String.valueOf(getPreference(RUN_COUNT)));
+                break;
+            case R.id.runlifecycle:
+                Intent intent2 = new Intent(this, LifecycleActivity.class);
+                startActivity(intent2);
                 break;
             default:
                 break;
